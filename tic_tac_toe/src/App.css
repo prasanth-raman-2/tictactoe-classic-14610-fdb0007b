@@ -11,8 +11,9 @@
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--base-dark);
-  color: var(--text-color);
+  background: linear-gradient(135deg, var(--secondary) 0%, #333 100%);
+  min-height: 100vh;
+  color: var(--primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,33 +22,40 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: none;
 }
 
 .navbar {
-  background-color: var(--base-dark);
-  padding: 16px;
+  background: var(--secondary);
+  padding: 18px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--elevation);
   position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
+  min-height: 64px;
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.28rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  letter-spacing: 0.5px;
+  color: var(--primary);
 }
 
 .logo-symbol {
-  color: var(--base-light);
+  color: var(--accent);
+  font-size: 1.5rem;
 }
+
 
 .container {
   max-width: 900px;
