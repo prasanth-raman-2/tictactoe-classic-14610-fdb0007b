@@ -63,7 +63,11 @@ body {
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
+  background: rgba(34, 34, 34, 0.86);
+  border-radius: 18px;
+  box-shadow: var(--elevation);
 }
+
 
 .hero {
   padding-top: 120px;
