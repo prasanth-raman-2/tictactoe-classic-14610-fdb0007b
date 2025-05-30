@@ -76,29 +76,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
 }
 
 .subtitle {
-  color: var(--base-light);
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.1;
   margin: 0;
+  background: linear-gradient(90deg, var(--primary), var(--accent) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .description {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 16px;
+  font-size: 1.13rem;
+  line-height: 1.55;
+  color: var(--primary);
+  max-width: 540px;
+  margin: 0 auto 18px auto;
+  opacity: 0.9;
 }
+
 
 .btn {
   background-color: var(--base-light);
